@@ -20,8 +20,15 @@ To run the Huffman Coding GUI application, you need to have Python installed on 
 
 Once Python is installed, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/huffman-coding-gui.git`
-2. Navigate to the cloned repository: `cd huffman-coding-gui`
+1. Clone this repository:
+```
+git clone https://github.com/your-username/huffman-coding-gui.git
+```
+
+3. Navigate to the cloned repository:
+```
+cd huffman-coding-gui
+```
 
 ## Usage
 
