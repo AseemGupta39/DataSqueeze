@@ -42,7 +42,7 @@ class HuffmanCoding:
             node = HeapNode(key, frequency_dict[key])
             heapq.heappush(self.__min_heap, node)
 
-    def __merge_nodes(self):
+    def __build_tree(self):
         while len(self.__min_heap) > 1:
             node1:HeapNode = heapq.heappop(self.__min_heap)
             node2:HeapNode = heapq.heappop(self.__min_heap)
@@ -53,14 +53,14 @@ class HuffmanCoding:
 
             heapq.heappush(self.__min_heap, merged)
 
-    def __make_codes(self):
+    def __generate_codes(self):
         if not self.__min_heap:
             return
         root:HeapNode = heapq.heappop(self.__min_heap)
         current_code = ""
-        self.__make_codes_helper(root, current_code)
+        self.__generate_codes_helper(root, current_code)
 
-    def __make_codes_helper(self, root, current_code):
+    def __generate_codes_helper(self, root, current_code):
         if root is None:
             return
 
@@ -69,8 +69,8 @@ class HuffmanCoding:
             self.__decoding_dict[current_code] = root.char
             return
 
-        self.__make_codes_helper(root.left_node, current_code + "0")
-        self.__make_codes_helper(root.right_node, current_code + "1")
+        self.__generate_codes_helper(root.left_node, current_code + "0")
+        self.__generate_codes_helper(root.right_node, current_code + "1")
 
     def __get_encoded_text(self, text):
         encoded_text = ""
@@ -113,8 +113,8 @@ class HuffmanCoding:
                 self.__encoding_dict = {}  
                 self.__decoding_dict = {}
                 self.__make_heap(frequency_dict)
-                self.__merge_nodes()
-                self.__make_codes()
+                self.__build_tree()
+                self.__generate_codes()
 
             # Convert decoding_dict to JSON string
             decoding_dict_str = json.dumps(self.__decoding_dict)

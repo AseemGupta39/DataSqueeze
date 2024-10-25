@@ -1,12 +1,11 @@
-# Huffman Coding GUI Application
+# DataSqueeze File Compression/Decompression Tool
 
 This repository contains a Python implementation of a Huffman Coding GUI application that allows users to compress and decompress text files. The application uses the Tkinter library for the graphical user interface (GUI).
 
 ## Features
-
-- Compress multiple text files at once.
-- Display the original and compressed file sizes.
-- Decompress compressed files back to their original format.
+- Can compress and decompress <b>multiple files at once</b>.
+- Compresses the <b>original file with upto 50% file size reduction</b>.
+- Display the <b>original and compressed file sizes</b>.
 
 ## Limitations
 
