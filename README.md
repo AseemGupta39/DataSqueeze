@@ -2,6 +2,9 @@
 
 This repository contains a Python implementation of a Huffman Coding GUI application that allows users to compress and decompress text files. The application uses the Tkinter library for the graphical user interface (GUI).
 
+## Demo Video
+Watch it Here https://drive.google.com/file/d/14yzkUoFC6oEp2mPFhxY-9QcPc1T4p8Mo/view?usp=sharing
+
 ## Features
 - Can compress and decompress <b>multiple files at once</b>.
 - Compresses the <b>original file with upto 50% file size reduction</b>.
