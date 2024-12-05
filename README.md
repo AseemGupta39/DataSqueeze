@@ -24,12 +24,12 @@ Once Python is installed, follow these steps:
 
 1. Clone this repository:
 ```
-git clone https://github.com/your-username/huffman-coding-gui.git
+git clone https://github.com/AseemGupta39/DataSqueeze.git
 ```
 
 3. Navigate to the cloned repository:
 ```
-cd huffman-coding-gui
+cd DataSqueeze
 ```
 
 ## Usage
